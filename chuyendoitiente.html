@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CurrencyConverter</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Amount</th>
+    <th>From Currency</th>
+    <th>To Currency</th>
+  </tr>
+  <tr>
+    <td><input type="text" id="Amount"></td>
+    <td style="text-align: center">
+      <select id="From">
+         <option value="VND">VND</option>
+         <option value="USD">USD</option>
+      </select>
+    </td>
+    <td style="text-align: center">
+      <select id="To">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+      </select>
+    </td>
+    <td><button onclick="changemoney()">Convert</button></td>
+  </tr>
+</table>
+<p id="Result"></p>
+<script src="changemoney.js"></script>
+</body>
+</html>
